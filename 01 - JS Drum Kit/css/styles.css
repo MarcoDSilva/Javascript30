@@ -1,1 +1,39 @@
 /* STYLE SHEET */
+body{
+    margin:0;
+    padding:0;
+    background: url("../img/bg.jpg") no-repeat; /*Photo by Yannis Papanastasopoulos on Unsplash*/
+    background-size: cover;
+}
+
+#keyboard {   
+    min-height: 100vh;
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.key {   
+    width: 100px;
+    height: 100px; 
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    transition:all 0.05s;
+    background: black;
+    opacity: 0.5;
+    
+}
+
+.playing{
+    transform:scale(1.1);
+    border-color:#ffc600;
+    box-shadow:0 0 10px #ffc600;
+}
+
+
+kbd {
+    display: block;
+    font-size:50px;
+}
+
