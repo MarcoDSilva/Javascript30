@@ -3,11 +3,11 @@ body{
     margin:0;
     padding:0;
     background: url("../img/bg.jpg") no-repeat; /*Photo by Yannis Papanastasopoulos on Unsplash*/
-    background-size: cover;
+    background-size: 100%;
 }
 
 #keyboard {   
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;    
     align-items: center;
     justify-content: space-evenly;
@@ -20,8 +20,8 @@ body{
     color:white;
     text-align: center;
     transition:all 0.05s;
-    background: black;
-    opacity: 0.5;
+    background: rgba(218, 139, 66, 0.486);
+    opacity: 0.8;
     
 }
 
@@ -36,4 +36,3 @@ kbd {
     display: block;
     font-size:50px;
 }
-
