@@ -1,0 +1,39 @@
+html {
+    background: url("bg.jpg") no-repeat; /*Photo by Tengyart on Unsplash*/
+    background-size:cover;
+}
+
+body {
+    margin:0;
+    padding:0;  
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+}
+
+.clock {
+    width: 15rem;
+    height:15rem;
+    border: 10px solid rgb(129, 37, 114);
+    border-radius:50%;
+    position:relative;
+    margin:50px auto;
+    box-shadow:
+    0 0 0 4px rgb(248, 104, 205),
+    inset 0 0 0 3px rgba(255, 0, 212, 0.37),
+    inset 0 0 10px white,
+    0 0 10px rgba(6, 79, 148, 0.5);
+
+
+}
+
+.hand {  
+    border: 2px solid rgb(220, 62, 241);
+    color:black;
+    width:50%;
+    height:6px;          
+    top:50%;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
