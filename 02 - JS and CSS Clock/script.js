@@ -6,7 +6,7 @@ const digitalSecond = document.querySelector('.seconds');
 //variables for analog clock
 const secondsHand = document.querySelector('.second-hand');
 const minutesHand = document.querySelector('.min-hand');
-const hourHand = document.querySelector('.hour-hand');
+const hourHand = document.querySelector('.hour-hand', '.transition');
 
 function setDate() {
     const now = new Date();
@@ -24,14 +24,16 @@ function setDate() {
     const minutesDegrees = (minutes / 60) * 360 + 90;
     const hoursDegrees = (hours / 12) * 360 + 90;
 
-    if(seconds === 59) {
+    if(seconds === 59 || seconds === 0) {
         secondsHand.classList.remove('.transition');
+        secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
         
-    } else if(seconds >= 1 && seconds <= 58)  {
+    } else {
         secondsHand.classList.add('.transition');
+        secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
     }
 
-    secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    
     minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
     hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 

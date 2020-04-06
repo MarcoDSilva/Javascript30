@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    color:white;
+    font-weight: 100;
+    font-size:35px;
+    background: #521a4a;
+}
+
+.pic {
+    width:480px;
+    height:708px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    margin-top:20px;
+}
+
+.extra {
+    color: var(--base);
+}
+
+footer {
+    font-size:14px;
+    margin-top:20px;
+}
+
+:root {
+    --base: #25a9f0;
+    --spacing: 10px;
+    --blur: 10px;
+
+}
